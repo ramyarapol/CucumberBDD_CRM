@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="26.848108">
+<testcase classname="FreeCRM Login Functionality" name="CRM Login Functionality" time="16.075294">
+<system-out><![CDATA[Given User is already on Login Page.........................................passed
+When The Title of Login Page is Free CRM....................................passed
+Then User enters "batchautomation" and "Test@12345".........................passed
+Then User clicks on Login button............................................passed
+Then User is on Home Page...................................................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FreeCRM Login Functionality" name="CRM Login Functionality 2" time="10.772814">
+<failure message="org.junit.ComparisonFailure: expected:&lt;CRMPRO[]&gt; but was:&lt;CRMPRO[ - CRM software for customer relationship management, sales, and support.]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:117)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:146)&#13;&#10;&#9;at stepDefinitions.LoginStepDef.user_is_on_Home_Page(LoginStepDef.java:72)&#13;&#10;&#9;at ✽.Then User is on Home Page(C:/Users/ramya/eclipse-workspace/javalearning/FreeCRM_BDDFramework/src/main/java/features/login.feature:11)&#13;&#10;"><![CDATA[Given User is already on Login Page.........................................passed
+When The Title of Login Page is Free CRM....................................passed
+Then User enters "tom" and "Test123@12345"..................................passed
+Then User clicks on Login button............................................passed
+Then User is on Home Page...................................................failed
+And User closes the browser.................................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<CRMPRO[]> but was:<CRMPRO[ - CRM software for customer relationship management, sales, and support.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.LoginStepDef.user_is_on_Home_Page(LoginStepDef.java:72)
+	at ✽.Then User is on Home Page(C:/Users/ramya/eclipse-workspace/javalearning/FreeCRM_BDDFramework/src/main/java/features/login.feature:11)
+]]></failure>
+</testcase>
+</testsuite>
